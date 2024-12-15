@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9CFA562E2CF83BA400646A37 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA562D2CF83BA400646A37 /* WidgetKit.framework */; };
+		9CFA56302CF83BA400646A37 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA562F2CF83BA400646A37 /* SwiftUI.framework */; };
+		9CFA563B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CFA562B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CFA565C2CF8711B00646A37 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA565B2CF8711B00646A37 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9CFA560B2CF83B9800646A37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +28,49 @@
 			remoteGlobalIDString = 9CFA55F72CF83B9700646A37;
 			remoteInfo = BrickPhone;
 		};
+		9CFA56392CF83BA400646A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFA55F02CF83B9700646A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CFA562A2CF83BA400646A37;
+			remoteInfo = BrickPhoneWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CFA56402CF83BA400646A37 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9CFA563B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9CFA55F82CF83B9700646A37 /* BrickPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA560A2CF83B9800646A37 /* BrickPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA56142CF83B9800646A37 /* BrickPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFA562B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BrickPhoneWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFA562D2CF83BA400646A37 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9CFA562F2CF83BA400646A37 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9CFA56422CF847F100646A37 /* BrickPhoneWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrickPhoneWidgetExtension.entitlements; sourceTree = "<group>"; };
+		9CFA565B2CF8711B00646A37 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9CFA563C2CF83BA400646A37 /* Exceptions for "BrickPhoneWidget" folder in "BrickPhoneWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9CFA562A2CF83BA400646A37 /* BrickPhoneWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9CFA55FA2CF83B9700646A37 /* BrickPhone */ = {
@@ -43,6 +86,14 @@
 		9CFA56172CF83B9800646A37 /* BrickPhoneUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrickPhoneUITests;
+			sourceTree = "<group>";
+		};
+		9CFA56312CF83BA400646A37 /* BrickPhoneWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9CFA563C2CF83BA400646A37 /* Exceptions for "BrickPhoneWidget" folder in "BrickPhoneWidgetExtension" target */,
+			);
+			path = BrickPhoneWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +120,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CFA56282CF83BA400646A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFA56302CF83BA400646A37 /* SwiftUI.framework in Frameworks */,
+				9CFA562E2CF83BA400646A37 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9CFA55EF2CF83B9700646A37 = {
 			isa = PBXGroup;
 			children = (
+				9CFA565B2CF8711B00646A37 /* Launch Screen.storyboard */,
+				9CFA56422CF847F100646A37 /* BrickPhoneWidgetExtension.entitlements */,
 				9CFA55FA2CF83B9700646A37 /* BrickPhone */,
 				9CFA560D2CF83B9800646A37 /* BrickPhoneTests */,
 				9CFA56172CF83B9800646A37 /* BrickPhoneUITests */,
+				9CFA56312CF83BA400646A37 /* BrickPhoneWidget */,
+				9CFA562C2CF83BA400646A37 /* Frameworks */,
 				9CFA55F92CF83B9700646A37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +152,18 @@
 				9CFA55F82CF83B9700646A37 /* BrickPhone.app */,
 				9CFA560A2CF83B9800646A37 /* BrickPhoneTests.xctest */,
 				9CFA56142CF83B9800646A37 /* BrickPhoneUITests.xctest */,
+				9CFA562B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9CFA562C2CF83BA400646A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA562D2CF83BA400646A37 /* WidgetKit.framework */,
+				9CFA562F2CF83BA400646A37 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +176,12 @@
 				9CFA55F42CF83B9700646A37 /* Sources */,
 				9CFA55F52CF83B9700646A37 /* Frameworks */,
 				9CFA55F62CF83B9700646A37 /* Resources */,
+				9CFA56402CF83BA400646A37 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9CFA563A2CF83BA400646A37 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9CFA55FA2CF83B9700646A37 /* BrickPhone */,
@@ -163,6 +239,28 @@
 			productReference = 9CFA56142CF83B9800646A37 /* BrickPhoneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9CFA562A2CF83BA400646A37 /* BrickPhoneWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CFA563D2CF83BA400646A37 /* Build configuration list for PBXNativeTarget "BrickPhoneWidgetExtension" */;
+			buildPhases = (
+				9CFA56272CF83BA400646A37 /* Sources */,
+				9CFA56282CF83BA400646A37 /* Frameworks */,
+				9CFA56292CF83BA400646A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9CFA56312CF83BA400646A37 /* BrickPhoneWidget */,
+			);
+			name = BrickPhoneWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BrickPhoneWidgetExtension;
+			productReference = 9CFA562B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +282,9 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 9CFA55F72CF83B9700646A37;
 					};
+					9CFA562A2CF83BA400646A37 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 				};
 			};
 			buildConfigurationList = 9CFA55F32CF83B9700646A37 /* Build configuration list for PBXProject "BrickPhone" */;
@@ -203,6 +304,7 @@
 				9CFA55F72CF83B9700646A37 /* BrickPhone */,
 				9CFA56092CF83B9800646A37 /* BrickPhoneTests */,
 				9CFA56132CF83B9800646A37 /* BrickPhoneUITests */,
+				9CFA562A2CF83BA400646A37 /* BrickPhoneWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFA565C2CF8711B00646A37 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +326,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9CFA56122CF83B9800646A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFA56292CF83BA400646A37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +363,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CFA56272CF83BA400646A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = 9CFA55F72CF83B9700646A37 /* BrickPhone */;
 			targetProxy = 9CFA56152CF83B9800646A37 /* PBXContainerItemProxy */;
+		};
+		9CFA563A2CF83BA400646A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CFA562A2CF83BA400646A37 /* BrickPhoneWidgetExtension */;
+			targetProxy = 9CFA56392CF83BA400646A37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,17 +515,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrickPhone/BrickPhone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrickPhone/Preview Content\"";
 				DEVELOPMENT_TEAM = KD29B8JM64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "             ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the wallpaper photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,9 +538,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sbs.brainrot.BrickPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,17 +553,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrickPhone/BrickPhone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BrickPhone/Preview Content\"";
 				DEVELOPMENT_TEAM = KD29B8JM64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "             ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the wallpaper photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,9 +576,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sbs.brainrot.BrickPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -518,6 +658,72 @@
 			};
 			name = Release;
 		};
+		9CFA563E2CF83BA400646A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BrickPhoneWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD29B8JM64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrickPhoneWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BrickPhoneWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sbs.brainrot.BrickPhone.BrickPhoneWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9CFA563F2CF83BA400646A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BrickPhoneWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD29B8JM64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrickPhoneWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BrickPhoneWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sbs.brainrot.BrickPhone.BrickPhoneWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +759,15 @@
 			buildConfigurations = (
 				9CFA56252CF83B9800646A37 /* Debug */,
 				9CFA56262CF83B9800646A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CFA563D2CF83BA400646A37 /* Build configuration list for PBXNativeTarget "BrickPhoneWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CFA563E2CF83BA400646A37 /* Debug */,
+				9CFA563F2CF83BA400646A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
