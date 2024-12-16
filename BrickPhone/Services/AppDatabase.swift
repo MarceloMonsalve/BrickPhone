@@ -151,7 +151,6 @@ enum AppDatabase {
         "ProtonVPN": "protonvpn://",
         "Quizlet": "quizlet://",
         "Reddit": "reddit://",
-        "Reminders": "x-apple-reminder://",
         "Ring": "ring://",
         "Robinhood": "robinhood://",
         "Safari": "x-web-search://",
