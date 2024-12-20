@@ -10,7 +10,9 @@ import SwiftUI
 
 @main
 struct BrickPhoneWidgetBundle: WidgetBundle {
+    @WidgetBundleBuilder
     var body: some Widget {
         BrickPhoneWidget()
+        BlankWidget()
     }
 }

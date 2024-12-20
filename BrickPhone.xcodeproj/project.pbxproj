@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CCD9CD82D10930C00DFAEA2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA562D2CF83BA400646A37 /* WidgetKit.framework */; };
+		9CCD9CD92D10930C00DFAEA2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA562F2CF83BA400646A37 /* SwiftUI.framework */; };
+		9CCD9CE42D10930D00DFAEA2 /* BlankWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CCD9CD72D10930C00DFAEA2 /* BlankWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CFA562E2CF83BA400646A37 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA562D2CF83BA400646A37 /* WidgetKit.framework */; };
 		9CFA56302CF83BA400646A37 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA562F2CF83BA400646A37 /* SwiftUI.framework */; };
 		9CFA563B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9CFA562B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -14,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9CCD9CE22D10930D00DFAEA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFA55F02CF83B9700646A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CCD9CD62D10930C00DFAEA2;
+			remoteInfo = BlankWidgetExtension;
+		};
 		9CFA560B2CF83B9800646A37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9CFA55F02CF83B9700646A37 /* Project object */;
@@ -45,6 +55,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				9CFA563B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex in Embed Foundation Extensions */,
+				9CCD9CE42D10930D00DFAEA2 /* BlankWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9CA74CE82D1531D70090D10C /* BlankWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlankWidgetExtension.entitlements; sourceTree = "<group>"; };
+		9CCD9CD72D10930C00DFAEA2 /* BlankWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlankWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA55F82CF83B9700646A37 /* BrickPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA560A2CF83B9800646A37 /* BrickPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFA56142CF83B9800646A37 /* BrickPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9CCD9CE52D10930D00DFAEA2 /* Exceptions for "BlankWidget" folder in "BlankWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9CCD9CD62D10930C00DFAEA2 /* BlankWidgetExtension */;
+		};
 		9CFA563C2CF83BA400646A37 /* Exceptions for "BrickPhoneWidget" folder in "BrickPhoneWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -73,6 +93,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9CCD9CDA2D10930C00DFAEA2 /* BlankWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9CCD9CE52D10930D00DFAEA2 /* Exceptions for "BlankWidget" folder in "BlankWidgetExtension" target */,
+			);
+			path = BlankWidget;
+			sourceTree = "<group>";
+		};
 		9CFA55FA2CF83B9700646A37 /* BrickPhone */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrickPhone;
@@ -99,6 +127,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9CCD9CD42D10930C00DFAEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCD9CD92D10930C00DFAEA2 /* SwiftUI.framework in Frameworks */,
+				9CCD9CD82D10930C00DFAEA2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CFA55F52CF83B9700646A37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,12 +172,14 @@
 		9CFA55EF2CF83B9700646A37 = {
 			isa = PBXGroup;
 			children = (
+				9CA74CE82D1531D70090D10C /* BlankWidgetExtension.entitlements */,
 				9CFA565B2CF8711B00646A37 /* Launch Screen.storyboard */,
 				9CFA56422CF847F100646A37 /* BrickPhoneWidgetExtension.entitlements */,
 				9CFA55FA2CF83B9700646A37 /* BrickPhone */,
 				9CFA560D2CF83B9800646A37 /* BrickPhoneTests */,
 				9CFA56172CF83B9800646A37 /* BrickPhoneUITests */,
 				9CFA56312CF83BA400646A37 /* BrickPhoneWidget */,
+				9CCD9CDA2D10930C00DFAEA2 /* BlankWidget */,
 				9CFA562C2CF83BA400646A37 /* Frameworks */,
 				9CFA55F92CF83B9700646A37 /* Products */,
 			);
@@ -153,6 +192,7 @@
 				9CFA560A2CF83B9800646A37 /* BrickPhoneTests.xctest */,
 				9CFA56142CF83B9800646A37 /* BrickPhoneUITests.xctest */,
 				9CFA562B2CF83BA400646A37 /* BrickPhoneWidgetExtension.appex */,
+				9CCD9CD72D10930C00DFAEA2 /* BlankWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +209,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9CCD9CD62D10930C00DFAEA2 /* BlankWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCD9CE62D10930D00DFAEA2 /* Build configuration list for PBXNativeTarget "BlankWidgetExtension" */;
+			buildPhases = (
+				9CCD9CD32D10930C00DFAEA2 /* Sources */,
+				9CCD9CD42D10930C00DFAEA2 /* Frameworks */,
+				9CCD9CD52D10930C00DFAEA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9CCD9CDA2D10930C00DFAEA2 /* BlankWidget */,
+			);
+			name = BlankWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BlankWidgetExtension;
+			productReference = 9CCD9CD72D10930C00DFAEA2 /* BlankWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9CFA55F72CF83B9700646A37 /* BrickPhone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFA561E2CF83B9800646A37 /* Build configuration list for PBXNativeTarget "BrickPhone" */;
@@ -182,6 +244,7 @@
 			);
 			dependencies = (
 				9CFA563A2CF83BA400646A37 /* PBXTargetDependency */,
+				9CCD9CE32D10930D00DFAEA2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9CFA55FA2CF83B9700646A37 /* BrickPhone */,
@@ -268,9 +331,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					9CCD9CD62D10930C00DFAEA2 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					9CFA55F72CF83B9700646A37 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -305,11 +371,19 @@
 				9CFA56092CF83B9800646A37 /* BrickPhoneTests */,
 				9CFA56132CF83B9800646A37 /* BrickPhoneUITests */,
 				9CFA562A2CF83BA400646A37 /* BrickPhoneWidgetExtension */,
+				9CCD9CD62D10930C00DFAEA2 /* BlankWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9CCD9CD52D10930C00DFAEA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CFA55F62CF83B9700646A37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +416,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9CCD9CD32D10930C00DFAEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CFA55F42CF83B9700646A37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +454,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9CCD9CE32D10930D00DFAEA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CCD9CD62D10930C00DFAEA2 /* BlankWidgetExtension */;
+			targetProxy = 9CCD9CE22D10930D00DFAEA2 /* PBXContainerItemProxy */;
+		};
 		9CFA560C2CF83B9800646A37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9CFA55F72CF83B9700646A37 /* BrickPhone */;
@@ -391,6 +477,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9CCD9CE72D10930D00DFAEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BlankWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD29B8JM64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlankWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlankWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sbs.brainrot.BrickPhone.BlankWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CCD9CE82D10930D00DFAEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BlankWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD29B8JM64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlankWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlankWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sbs.brainrot.BrickPhone.BlankWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9CFA561C2CF83B9800646A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -727,6 +871,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9CCD9CE62D10930D00DFAEA2 /* Build configuration list for PBXNativeTarget "BlankWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCD9CE72D10930D00DFAEA2 /* Debug */,
+				9CCD9CE82D10930D00DFAEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CFA55F32CF83B9700646A37 /* Build configuration list for PBXProject "BrickPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

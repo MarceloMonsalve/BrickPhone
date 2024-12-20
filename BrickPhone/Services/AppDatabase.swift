@@ -117,7 +117,7 @@ enum AppDatabase {
         "Marco Polo": "marcopolo://",
         "McDonalds": "mcdonalds://",
         "Medium": "medium://",
-        "Messages": "sms://",
+        "Messages": "messages://",
         "Microsoft Excel": "ms-excel://",
         "Microsoft OneDrive": "onedrive://",
         "Microsoft OneNote": "onenote://",
